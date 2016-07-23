@@ -1,0 +1,146 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 14px;
+}
+
+#main_table {
+    max-width: 85%;
+    margin: 16px auto;
+}
+
+.main_td {
+    padding: 8px;
+    background-color: white;
+    border: 4px solid white;
+}
+
+
+.img_td {
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table_img {
+    max-width: 90%;
+    padding: 8px;
+}
+
+.text_td {
+    padding: 8px;
+}
+
+#left_td {
+    text-align: center;
+    width: 50%;
+}
+
+#header {
+    position: relative;
+    max-width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 8px 0px;
+}
+
+#header_dropdown {
+    position: absolute;
+    text-align: left;
+    left: 5%;
+    top: 35%;
+}
+
+#header_dropdown_icon {
+    position: relative;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 2; 
+    margin: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.show {
+    display: block;
+}
+
+.dropdown_item {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    min-width: 150px;
+    text-align: left;
+    border: 2px solid white;
+    opacity: 0.95;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.dropdown_item:hover {
+    background-color: #C6D4E1;
+}
+
+#slideshow_holder {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    border: 2px solid #C6D4E1;
+    height: 100%;
+}
+
+.slide_button {
+    position: absolute;
+    color: white; 
+    top: 45%;
+    padding: 8px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.slide_button:hover {
+    color: black;
+    background-color: white;
+    opacity: 0.4;
+    transition: 0.6s ease;
+}
+
+#right_button {
+    
+    right: 0;
+}
+
+#dot_nav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+}
+
+.dot {
+    display: inline-block;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    z-index: 1;
+    border-radius: 4px;
+    margin: 0px 4px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.dot:hover {
+    color: black;
+    background-color: white;
+    opacity: 0.4;
+}
