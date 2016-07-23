@@ -41,7 +41,22 @@ var showMenu = function() {
     document.getElementById("header_dropdown_content").classList.toggle("show");
 }
 
-window.setInterval(incImgNbr,5000);
+window.onclick = function(event) {
+    
+    if(!event.target.matches('#header_dropdown_icon')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for(i=0; i <dropdowns.length;i++) {
+            var opendropdown = dropdowns[i];
+            if (opendropdown.classList.contains('show')) {
+                opendropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+
+window.setInterval(incImgNbr,10000);
 
 leftEl.addEventListener("click",decImgNbr);
 rightEl.addEventListener("click",incImgNbr);
