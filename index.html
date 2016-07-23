@@ -12,9 +12,10 @@
     <script>
         
         var btn = document.getElementById("btn");
+        var p = document.getElementById("paragraph");
         
         var buttonclick = function() {
-            document.getElementById("paragraph").innerHTML = "Nice!"
+            p.innerHTML = "Nice!";
         }
         
         btn.addEventListener("click",buttonclick);
