@@ -6,7 +6,20 @@
     </head>
 
     <body>
-    <p>Hello World!</p>
+    <p id="paragraph">Hello World!</p>
+    <button id="btn">click me!</button>
+        
+    <script>
+        
+        var btn = document.getElementById("btn");
+        
+        var buttonclick = function() {
+            document.getElementById("paragraph").innerHTML = "Nice!"
+        }
+        
+        btn.addEventListener("click",buttonclick);
+        
+    </script>
     </body>
     
 </html>
