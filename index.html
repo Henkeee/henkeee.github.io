@@ -88,6 +88,7 @@
         var leftEl = document.getElementById("left_button");
         var rightEl = document.getElementById("right_button");
         var naviconEl = document.getElementById("header_dropdown_icon");
+        
 
         var switchImage = function(imgInt) {
 
@@ -124,6 +125,8 @@
         var showMenu = function() {
             document.getElementById("header_dropdown_content").classList.toggle("show");
         }
+        
+        window.setInterval(incImgNbr,5000);
 
         leftEl.addEventListener("click",decImgNbr);
         rightEl.addEventListener("click",incImgNbr);
