@@ -10,33 +10,45 @@
 <body>
 
     <div id="header">
-        <div id="header_dropdown">
-        <button id="header_dropdown_icon">&#9776;</button>
+
+        <button id="header_dropdown_icon" class="dropdown_button noselect" onclick="showDropdown(1)">&#9776;</button>
+        
             <div id="header_dropdown_content" class="dropdown_content">
-                <a href="index.html" class="dropdown_item">HelloPHP</a>
+                <a href="index.html" class="dropdown_item">Link 1</a>
                 <a href="index.html" class="dropdown_item">Link 2</a>
-                <a href="index.html" class="dropdown_item">Link 3 </a>
-            </div>
-        </div> 
+                <a href="index.html" class="dropdown_item">Link 3</a>
+            </div> 
         
         <a href="index.html"><img id="main_logga" src="Pictures/leaf-favicon.PNG" width="100px"></a>
 
     </div>
 
-    <div id="slideshow_holder">
-    <div id="left_button" class="slide_button">&#10094;</div>
-    <div id="right_button" class="slide_button">&#10095;</div>
-    <div id="dot_nav">
-        <span id="dot_one" onclick="switchImage(1)" class="dot"></span>
-        <span id="dot_two" onclick="switchImage(2)" class="dot"></span>
-        <span id="dot_three" onclick="switchImage(3)" class="dot"></span>
-        <span id="dot_four" onclick="switchImage(4)" class="dot"></span>
-    </div>     
-    <img id="slide_img" src="Pictures/img_fjords_wide.jpg" alt="En bild på en fjord" width="100%" > 
+    <div class="slideshow_holder">
+        <div id="slide_left_button" class="slide_button" onclick="changeDivs(-1)">&#10094;</div>
+        <div id="slide_right_button" class="slide_button" onclick="changeDivs(1)">&#10095;</div>
+        <div id="dot_nav">
+            <span id="dot_one" onclick="showDivs(0)" class="dot"></span>
+            <span id="dot_two" onclick="showDivs(1)" class="dot"></span>
+            <span id="dot_three" onclick="showDivs(2)" class="dot"></span>
+            <span id="dot_four" onclick="showDivs(3)" class="dot"></span>
+        </div>     
+        <div class="slide">
+            <img class="slide_img" src="Pictures/img_fjords_wide.jpg" alt="Fjord" width="100%" >
+        </div>
+        <div class="slide">
+            <img class="slide_img" src="Pictures/img_lights_wide.jpg" alt="Lights" width="100%" >
+        </div>
+        <div class="slide">
+            <img class="slide_img" src="Pictures/img_mountains_wide.jpg" alt="Mountains" width="100%" >
+        </div>
+        <div class="slide">
+            <img class="slide_img" src="Pictures/img_nature_wide.jpg" alt="Nature" width="100%" >
+        </div>
+        
 
     </div>
     
-        <table id="main_table">
+    <table id="main_table">
         <tr>
             <td id="top_td" class="main_td" colspan="2" rowspan="1">
                 <table class="info_template"> 
@@ -84,7 +96,8 @@
 </body>
 
 <footer>
-    <script src="LeafLexi.js"></script> 
+    <script src="dropdown.js"></script>
+    <script src="slideshow.js"></script>
 </footer>
 
 </html>
