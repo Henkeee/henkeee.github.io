@@ -40,7 +40,7 @@ body {
 #header {
     position: relative;
     max-width: 100%;
-    height: 100px;
+    height: 110px;
     text-align: center;
     margin: 8px 0px;
 }
@@ -159,4 +159,13 @@ body {
     color: black;
     background-color: white;
     opacity: 0.4;
+}
+
+#canvas-div {
+    width: 600px;
+    margin: auto;
+}
+
+#myCanvas {
+    border: 2px solid black;
 }
