@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="Static/CSS/SBstylesheet.css">
+</head>
+    
+<body>
+    
+    <div id="header">
+
+        <button id="header_dropdown_icon" class="dropdown_button noselect" onclick="showDropdown(1)">&#9776;</button>
+        
+            <div id="header_dropdown_content" class="dropdown_content">
+                <a href="avoidthefloor.html" class="dropdown_item">Avoid the Floor</a>
+                
+                <a href="genericleaf.html" class="dropdown_item">Blank</a>
+                
+                <a href="index.html" class="dropdown_item">Link 3</a>
+            </div> 
+        
+        <a href="index.html"><img id="main_logga" src="Pictures/leaf-favicon.PNG" width="100px"></a>
+
+    </div>
+    
+    <div id="canvas-div">
+        <h1>Avoid the floor!</h1>
+        <canvas id="myCanvas" data-processing-sources="Static/PDE/avoidthefloor.pde"></canvas>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+    
+    
+</body>
+    
+<footer>
+    <script src="JSlibrary/processing.js"></script>
+    <script src="JSlibrary/dropdown.js"></script>
+    <script src="JSlibrary/general.js"></script>
+</footer>    
+    
+</html>
