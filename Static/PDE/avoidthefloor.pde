@@ -4,6 +4,7 @@ void setup(){
     
     gameStarted = 0;
     startTime = new Date();
+    lastClick = new Date();
     points = 0;
 
     [x,y] = [295,380];
@@ -61,14 +62,18 @@ void draw() {
     
     if(gameStarted == 1){
     pointsCounter();
+    
     }
 }
 
 void mouseReleased(){
-
+    if((new Date()-lastClick)>500){
     g=0.1;
     [dx,dy] = [(mouseX-x)/10,(mouseY-y)/10];
+    lastClick = new Date();
+    }
     gameStart();
+    
     
 }
 
