@@ -3,27 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>MatthisIsStupid</title>
-    <link href="SBstylesheet.css" rel="stylesheet">
+    <link href="Static/CSS/SBstylesheet.css" rel="stylesheet">
     <link rel="icon" href="Pictures/leaf-favicon.PNG">
 </head>
 
 <body>
-
-    <div id="header">
-
-        <button id="header_dropdown_icon" class="dropdown_button noselect" onclick="showDropdown(1)">&#9776;</button>
-        
-            <div id="header_dropdown_content" class="dropdown_content">
-                <a href="avoidthefloor.html" class="dropdown_item">Avoid the Floor</a>
-                
-                <a href="index.html" class="dropdown_item">Link 2</a>
-                
-                <a href="index.html" class="dropdown_item">Link 3</a>
-            </div> 
-        
-        <a href="index.html"><img id="main_logga" src="Pictures/leaf-favicon.PNG" width="100px"></a>
-
-    </div>
+    
+    <?php include 'Included/header.php' ?>
 
     <div class="slideshow_holder">
         <div id="slide_left_button" class="slide_button" onclick="changeDivs(-1)">&#10094;</div>
@@ -98,8 +84,8 @@
 </body>
 
 <footer>
-    <script src="dropdown.js"></script>
-    <script src="slideshow.js"></script>
+    <script src="JSlibrary/dropdown.js"></script>
+    <script src="JSlibrary/slideshow.js"></script>
 </footer>
 
 </html>
