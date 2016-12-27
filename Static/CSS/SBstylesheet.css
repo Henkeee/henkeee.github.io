@@ -150,3 +150,7 @@ body {
     width: 50%;
 }
 
+canvas {
+    width: auto;
+    margin: auto;
+}
