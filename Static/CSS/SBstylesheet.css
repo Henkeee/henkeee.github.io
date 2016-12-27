@@ -150,7 +150,15 @@ body {
     width: 50%;
 }
 
-canvas {
-    width: auto;
+#atf {
+    position: relative;
+    padding: 16px;
+    top: 80px;
+    width: 600px;
     margin: auto;
 }
+
+canvas {
+    border: 2px solid black;
+}
+
