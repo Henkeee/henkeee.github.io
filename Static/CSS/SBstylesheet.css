@@ -150,6 +150,8 @@ body {
     width: 50%;
 }
 
+/* Avoid the floor Canvas */
+
 #atf {
     position: relative;
     padding: 16px;
@@ -161,4 +163,5 @@ body {
 canvas {
     border: 2px solid black;
 }
+
 
